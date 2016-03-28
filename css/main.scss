@@ -144,9 +144,9 @@ a{
 		transition: opacity 0.3s linear;
 	}
 	h3{
-		font-size: 1.8rem;
+		font-size: 2.6rem;
 		transform: translateY(25px);
-		transition: all 400ms ease-out 250ms;
+		transition: all 400ms ease-out;
 		&:after{
 			display: block;
 			content: '';
@@ -157,10 +157,10 @@ a{
 		}
 	}
 	p{
-		font-size: 1.2rem;
+		font-size: 1.5rem;
 		line-height: 1.6;
 		transform: translateY(40px);
-		transition: all 400ms ease-out 250ms;
+		transition: all 400ms ease-out;
 	}
 
 	&:hover{
