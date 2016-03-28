@@ -45,6 +45,19 @@ a{
 	border-bottom: 1px solid $lightblue;
 }
 
+::selection{
+	color: $white;
+	background-color: $lightblue;
+}
+::-moz-selection{
+	color: $white;
+	background-color: $lightblue;
+}
+
+.selection{
+	color: $lightblue;
+}
+
 .wrapper{
 	max-width: 1180px;
 	padding: 0 10px;
@@ -53,6 +66,16 @@ a{
 
 .about{
 	padding-bottom: 100px;
+	background: $dark;
+}
+
+//clearfix
+.about{
+	&:after, &:before {
+		content: "";
+		display: table;
+		clear: both;
+	}
 }
 
 .main-h{
@@ -149,4 +172,9 @@ a{
 			transition: opacity 0.4s 0.1s linear;
 		}
 	}
+}
+
+.skills{
+	// background: $black;
+	padding: 100px 0;
 }
