@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>UCAN dashboard</title>
+	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway:400,600,700,800">
+	<link rel="stylesheet" href="css/main.css">
+	<link rel="stylesheet" href="css/jquery.formstyler.css">
+	<link rel="icon" href="img/favicon.ico">
+</head>
+<body>
+	<div class="wrapper">
+		<nav class="mainnav">
+			<a href="" class="burger-button">
+				<p class="burger"></p>
+				<div class="logo"></div>
+			</a>
+			<a href="" class="link link-dashboard">
+				<span>DASHBOARD</span>
+			</a>
+			<div class="link link-profile active">
+				<span>PROFILE</span>
+				<div class="sublinks">
+					<a href="">Home</a>
+					<a href="">Progress</a>
+					<a href="">Documents</a>
+					<a href="">Files</a>
+					<a href="">Communication</a>
+				</div>
+			</div>
+		</nav>
+		<div class="content">
+			<div class="top-area">
+				<a href="" class="logo logo-right"></a>
+				<div class="navigation">
+					<a href="">Home</a>
+					<a href="">Progress</a>
+					<a href="">Documents</a>
+					<a href="">Files</a>
+					<a href="">Communication</a>
+					<a href="">Feedback</a>
+				</div>
+			</div>
+			<div class="dash-info">	
+				<div class="table-wrapper">
+					<table class="top-table">
+						<tr>
+							<td>Assigned assessor:</td>
+							<td>Assessor Example</td>
+						</tr>
+						<tr>
+							<td>Aim:</td>
+							<td>Diploma in Health Social Care Adults for England QCF</td>
+						</tr>
+						<tr>
+							<td>Letter from Secretary of State:</td>
+							<td><a href="">Download PDF</a></td>
+						</tr>
+						<tr>
+							<td>Procedure for dealing with complaints about providers of education and training: </td>
+							<td><a href="">Download PDF</a></td>
+						</tr>
+					</table>
+				</div>
+				<div class="progress">
+					<div class="progress-graph">
+						<h2 class="progress-title">Progress</h2>
+						<div id="circle">
+							<div class="info">
+								<p class="complete">Complete: <span>79.2</span>%</p>
+								<p class="todo">To do: <span>20.8</span>%</p>
+							</div>
+						</div>
+					</div>
+					<div class="progress-items">
+						<ul class="progress-items-list">
+							<li class="done">
+								<span>FS English Speaking Listening</span>
+								<ul class="progress-loaders">
+									<li>
+										<span>graphs</span>
+										<div class="loader">
+											<div class="loaded" style="width: 14%;"></div>
+											<p class="count">14%</p>
+										</div>
+									</li>
+									<li>
+										<span>charts</span>
+										<div class="loader">
+											<div class="loaded" style="width: 60%;"></div>
+											<p class="count">60%</p>
+										</div>
+									</li>
+									<li>
+										<span>tables</span>
+										<div class="loader">
+											<div class="loaded" style="width: 0%;"></div>
+											<p class="count">0%</p>
+										</div>
+									</li>
+								</ul>
+							</li>
+							<li class="done">
+								<span>FS English Test</span>
+								<ul class="progress-loaders">
+									<li>
+										<span>graphs</span>
+										<div class="loader">
+											<div class="loaded" style="width: 14%;"></div>
+											<p class="count">14%</p>
+										</div>
+									</li>
+									<li>
+										<span>charts</span>
+										<div class="loader">
+											<div class="loaded" style="width: 60%;"></div>
+											<p class="count">60%</p>
+										</div>
+									</li>
+									<li>
+										<span>tables</span>
+										<div class="loader">
+											<div class="loaded" style="width: 0%;"></div>
+											<p class="count">0%</p>
+										</div>
+									</li>
+								</ul>
+							</li>
+							<li class="todo opened">
+								<span>Reading</span>
+								<ul class="progress-loaders">
+									<li>
+										<span>graphs</span>
+										<div class="loader">
+											<div class="loaded" style="width: 14%;"></div>
+											<p class="count">14%</p>
+										</div>
+									</li>
+									<li>
+										<span>charts</span>
+										<div class="loader">
+											<div class="loaded" style="width: 60%;"></div>
+											<p class="count">60%</p>
+										</div>
+									</li>
+									<li>
+										<span>tables</span>
+										<div class="loader">
+											<div class="loaded" style="width: 0%;"></div>
+											<p class="count">0%</p>
+										</div>
+									</li>
+								</ul>
+							</li>
+							<li class="todo">
+								<span>FS Maths Test</span>
+								<ul class="progress-loaders">
+									<li>
+										<span>graphs</span>
+										<div class="loader">
+											<div class="loaded" style="width: 14%;"></div>
+											<p class="count">14%</p>
+										</div>
+									</li>
+									<li>
+										<span>charts</span>
+										<div class="loader">
+											<div class="loaded" style="width: 60%;"></div>
+											<p class="count">60%</p>
+										</div>
+									</li>
+									<li>
+										<span>tables</span>
+										<div class="loader">
+											<div class="loaded" style="width: 0%;"></div>
+											<p class="count">0%</p>
+										</div>
+									</li>
+								</ul>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<h2 class="section-title">Documents</h2>
+				<div class="dash-table">
+					<div class="row headline">
+						<p>NAME</p>
+						<p>DATE</p>
+						<p>STATUS</p>
+						<p>LINK</p>
+					</div>
+					<div class="row">
+						<p>Contact - Learner Progress Review </p>
+						<p>25/05/2016</p>
+						<p>needs signing</p>
+						<p><a href="" class="table-link"></a></p>
+					</div>
+					<div class="row">
+						<p>Contact - Learner Progress Review</p>
+						<p>25/05/2016</p>
+						<p>needs signing</p>
+						<p><a href="" class="table-link"></a></p>
+					</div>
+					<div class="row">
+						<p>Contact - Learner Progress Review </p>
+						<p>25/05/2016</p>
+						<p>needs signing</p>
+						<p><a href="" class="table-link"></a></p>
+					</div>
+				</div>
+				<div class="items-count">
+					<span class="active">10</span>
+					<span>25</span>
+					<span>50</span>
+					<span>100</span>
+				</div>
+				<h2 class="section-title">Files</h2>
+				<h3 class="section-subtitle">YOUR FILES:</h3>
+				<div class="dash-table">
+					<div class="row headline">
+						<p>NAME</p>
+						<p>DATE</p>
+						<p>STATUS</p>
+						<p>LINK</p>
+					</div>
+					<div class="row">
+						<p>Contact - Learner Progress Review </p>
+						<p>25/05/2016</p>
+						<p>needs signing</p>
+						<p><a href="" class="table-link"></a></p>
+					</div>
+					<div class="row">
+						<p>Contact - Learner Progress Review</p>
+						<p>25/05/2016</p>
+						<p>needs signing</p>
+						<p><a href="" class="table-link"></a></p>
+					</div>
+					<div class="row">
+						<p>Contact - Learner Progress Review </p>
+						<p>25/05/2016</p>
+						<p>needs signing</p>
+						<p><a href="" class="table-link"></a></p>
+					</div>
+				</div>
+				<div class="items-count">
+					<span class="active">10</span>
+					<span>25</span>
+					<span>50</span>
+					<span>100</span>
+				</div>
+				<h3 class="section-subtitle">RESOURCES:</h3>
+				<div class="dash-table">
+					<!-- <div class="row headline">
+						<p>NAME</p>
+						<p>DATE</p>
+						<p>STATUS</p>
+						<p>LINK</p>
+					</div> -->
+					<div class="row">
+						<p>Contact - Learner Progress Review </p>
+						<p>25/05/2016</p>
+						<p>needs signing</p>
+						<p><a href="" class="table-link"></a></p>
+					</div>
+					<div class="row">
+						<p>Contact - Learner Progress Review</p>
+						<p>25/05/2016</p>
+						<p>needs signing</p>
+						<p><a href="" class="table-link"></a></p>
+					</div>
+					<div class="row">
+						<p>Contact - Learner Progress Review </p>
+						<p>25/05/2016</p>
+						<p>needs signing</p>
+						<p><a href="" class="table-link"></a></p>
+					</div>
+				</div>
+				<div class="items-count">
+					<span class="active">10</span>
+					<span>25</span>
+					<span>50</span>
+					<span>100</span>
+				</div>
+				<h2 class="section-title">Communication</h2>
+				<form action="" class="dash-form">
+					<input type="text" placeholder="Subject">
+					<textarea name="" placeholder="Message"></textarea>
+					<label>
+						<span class="label-text">To:</span>
+						<select name="">
+							<option value="">Assessor Example</option>
+							<option value="">Assessor Example2</option>
+							<option value="">Assessor Example3</option>
+						</select>
+					</label>
+					<button>SEND</button>
+				</form>
+				<div class="dash-message">
+					<p class="date">Fri, 17 Jun 2016 08:45:21</p>
+					<p class="title">Cheryl Macriner said - <b>CSM Document to e-sign</b> - aaliyahsacha16@live.co.uk</p>
+					<div class="text">
+						Hello,<br>
+						Please open the link below to view document.<br>
+						Click sign to confirm.<br>
+						Note this will only be available once.<br>
+						Please contact your assessor if you have any problems.<br>
+					</div>
+					<a href="">http://learnerfile.csmtraining.co.uk/CEEF:9535</a>
+					<div class="additional-text">
+						CSM is committed to the pro-active safeguarding of all students, colleagues and partners.<br>
+						This message contains confidential information and is intended only for the individual named. If you are not the named addressee you should not disseminate, distribute or copy this e-mail. <br>
+						Please notify the sender immediately by e-mail if you have received this e-mail by mistake and delete this e-mail from your system. E-mail transmission cannot be guaranteed to be secure<br>
+						or error-free as information could be intercepted, corrupted, lost, destroyed, arrive late or incomplete, or contain viruses. The sender therefore does not accept liability for any errors or omissions.
+					</div>
+				</div>
+				<div class="dash-message">
+					<p class="date">Fri, 17 Jun 2016 08:45:21</p>
+					<p class="title">Cheryl Macriner said - <b>CSM Document to e-sign</b> - aaliyahsacha16@live.co.uk</p>
+					<div class="text">
+						Hello,<br>
+						Please open the link below to view document.<br>
+						Click sign to confirm.<br>
+						Note this will only be available once.<br>
+						Please contact your assessor if you have any problems.<br>
+					</div>
+					<a href="">http://learnerfile.csmtraining.co.uk/CEEF:9535</a>
+					<div class="additional-text">
+						CSM is committed to the pro-active safeguarding of all students, colleagues and partners.<br>
+						This message contains confidential information and is intended only for the individual named. If you are not the named addressee you should not disseminate, distribute or copy this e-mail. <br>
+						Please notify the sender immediately by e-mail if you have received this e-mail by mistake and delete this e-mail from your system. E-mail transmission cannot be guaranteed to be secure<br>
+						or error-free as information could be intercepted, corrupted, lost, destroyed, arrive late or incomplete, or contain viruses. The sender therefore does not accept liability for any errors or omissions.
+					</div>
+				</div>
+				<div class="items-count items-count-centered">
+					<span class="active">10</span>
+					<span>25</span>
+					<span>50</span>
+					<span>100</span>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="popup-container"> <!-- use class "opened" to show popup -->
+		<div class="popup">
+			<div class="logo-area">
+				<a href="" class="logo"></a>
+			</div>
+			<p>Hello Candidate One, if you dont mind how are you feeling about your course?<br>Please click a face and/or leave a comment.</p>
+			<form action="">
+				<div class="radio-icons">
+					<label>
+						<input type="radio" name="myradio">
+						<div class="hover"></div>
+					</label>
+					<label>
+						<input type="radio" name="myradio">
+						<div class="hover"></div>
+					</label>
+					<label>
+						<input type="radio" name="myradio">
+						<div class="hover"></div>
+					</label>
+					<label>
+						<input type="radio" name="myradio">
+						<div class="hover"></div>
+					</label>
+				</div>
+				<textarea name=""></textarea>
+				<button>SEND</button>
+			</form>
+		</div>
+	</div>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+	<script> window.jQuery || document.write('<script src="js/jquery-2.1.4.min.js"><\/script>')</script>
+	<script src="js/jquery.formstyler.min.js"></script>
+	<script src="js/circle-progress.js"></script>
+	<script>
+		$(document).ready(function(){
+			$('#circle').circleProgress({
+		        value: 0.792,
+		        size: 375,
+		        thickness: 60,
+		        fill: {color: "#79d056"},
+		    });
+		});
+	</script>
+	<script src="js/main.js"></script>
+</body>
+</html>
