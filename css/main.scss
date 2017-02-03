@@ -1,4 +1,4 @@
-@import 'normalize';
+@import '_normalize';
 
 /***************
 *	Colors
@@ -14,6 +14,10 @@ $lightblue: #09b5df;
 /***************
 *	Styles
 ***************/
+
+html, body{
+	height: 100%;
+}
 
 body{
 	background: $black;
@@ -63,6 +67,35 @@ a{
 	padding: 0 20px;
 	margin: 0 auto;
 	font-size: 0;
+}
+
+.header{
+	height: 100%;
+	background: url('../img/bg.jpg') center center;
+	background-size: cover;
+	position: relative;
+	&:after{
+		display: block;
+		content: '';
+		width: 100%;
+		height: 100%;
+		position: absolute;
+		top: 0;
+		left: 0;
+		background: rgba(0, 0, 0, .95);
+	}
+	.wrapper{
+		display: table;
+		box-sizing: border-box;
+		width: 100%;
+		height: 100%;
+	}
+	.main-h{
+		display: table-cell;
+		position: relative;
+		z-index: 1;
+		vertical-align: middle;
+	}
 }
 
 .about{
@@ -123,6 +156,9 @@ a{
 	display: inline-block;
 	vertical-align: top;
 	width: 66%;
+	a{
+		word-wrap: break-word;
+	}
 }
 
 .portfolio{
@@ -185,6 +221,26 @@ a{
 
 .skills{
 	padding: 100px 0;
+}
+
+.skills-group{
+	display: inline-block;
+	vertical-align: top;
+	width: 33%;
+	font-size: 24px;
+	margin-top: 20px;
+	p{
+		color: $darkgray;
+		text-transform: uppercase;
+		letter-spacing: 0.01em;
+		font-size: 18px;
+	}
+	ul{
+		padding-left: 24px;
+	}
+	li{
+		margin: 10px 0;
+	}
 }
 
 @media (max-width: 1400px){
@@ -262,6 +318,10 @@ a{
 		h1{
 			font-size: 1.5rem;
 		}
+	}
+
+	.skills-group{
+		width: 100%;
 	}
 }
 
