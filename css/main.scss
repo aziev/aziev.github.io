@@ -247,6 +247,16 @@ a{
 	}
 }
 
+.company-link{
+	color: #7d8488;
+	border: none;
+	transition: 0.3s;
+	&:hover{
+		color: $lightblue;
+		border-color: $lightblue;
+	}
+}
+
 @media (max-width: 1400px){
 
 	.item{
