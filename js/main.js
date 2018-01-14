@@ -1,6 +1,6 @@
 $(document).ready(function() {
 
-    var $body = $('body');
+    var $body = $('html, body');
     var $header = $('.header');
 
 	$('.item').on('click', function() {});
