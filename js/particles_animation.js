@@ -3,6 +3,8 @@ var canvas = document.getElementById('particles_canvas'),
     can_h = parseInt(canvas.getAttribute('height')),
     ctx = canvas.getContext('2d');
 
+var ballsCount = Math.round((can_w / 20) * (can_h / 20));
+
 var ball = {
         x: 0,
         y: 0,
@@ -196,7 +198,7 @@ function getDisOf(b1, b2) {
 
 // add balls if there a little balls
 function addBallIfy() {
-    if (balls.length < 50) {
+    if (balls.length < ballsCount) {
         balls.push(getRandomBall());
     }
 }
@@ -247,7 +249,7 @@ window.addEventListener('resize', function (e) {
 
 function goMovie() {
     initCanvas();
-    initBalls(50);
+    initBalls(ballsCount);
     window.requestAnimationFrame(render);
 }
 
