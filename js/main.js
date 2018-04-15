@@ -12,4 +12,12 @@ $(document).ready(function() {
             $header.css('opacity', opacity);
         }
     });
+
+    var headerHeight = $header.outerHeight();
+
+    $('#slide-down-btn').on('click', function () {
+        $body.animate({
+            scrollTop: headerHeight,
+        }, 700);
+    });
 });
