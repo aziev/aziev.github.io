@@ -3,7 +3,7 @@ var canvas = document.getElementById('particles_canvas'),
     can_h = parseInt(canvas.getAttribute('height')),
     ctx = canvas.getContext('2d');
 
-var ballsCount = Math.round((can_w / 20) * (can_h / 20));
+var ballsCount = Math.round(window.innerWidth * window.innerHeight / 50000); // 1 ball for 50000 pixels
 
 var ball = {
         x: 0,
