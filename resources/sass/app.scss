@@ -1,9 +1,6 @@
 @import "normalize";
 @import "variables";
-
-html, body{
-	height: 100%;
-}
+@import "animations";
 
 body{
 	background: $black;
@@ -56,9 +53,8 @@ a{
 }
 
 .header{
-	height: 100%;
-	background: url('../../img/bg.jpg') center center;
-	background-attachment: fixed;
+	height: 100vh;
+	background: url('../../img/bg.jpg') fixed center center;
 	background-size: cover;
 	position: relative;
 	&:after{
@@ -69,8 +65,7 @@ a{
 		position: absolute;
 		top: 0;
 		left: 0;
-		background: rgba(0, 0, 0, .7);
-		// background: linear-gradient(to right, #333, rgba(0, 0, 0, .7));
+		background: rgba(0, 0, 0, .8);
 	}
 	.wrapper{
 		display: table;
@@ -80,11 +75,15 @@ a{
 		height: 100%;
 	}
 	h1 {
-		margin: 0 0 8px;
+		margin: 0 0 14px;
 	}
-	h3 {
-		margin: 0;
-		font-weight: 400;
+	hr {
+		display: inline-block;
+		height: 1px;
+		width: 0;
+		background: $lightblue;
+		border: none;
+		animation: hr 1.3s 1.4s cubic-bezier(0.76, 0.01, 0.21, 1.02) forwards;
 	}
 	.header-text {
 		padding: 16px 0;
@@ -101,45 +100,27 @@ a{
 		vertical-align: bottom;
 		padding-bottom: 100px;
 	}
-	#slide-down-btn {
-		position: absolute;
-		bottom: 50px;
-		left: 50%;
-		margin-left: -12px;
-		z-index: 2;
-		width: 20px;
-		height: 20px;
-		color: $lightblue;
-		background: transparent;
-		border: none;
-		font-size: 32px;
-		background: url('../../img/thin-arrowheads-pointing-down.svg') center center no-repeat;
-		background-size: contain;
-		animation: bounce;
-		animation-duration: 2s;
-		animation-timing-function: ease-in-out;
-		animation-iteration-count: infinite;
-		animation-delay: .5s;
-		opacity: 0;
-		outline: none;
-	}
 }
 
-@keyframes bounce {
-	from {
+#label {
+	display: inline-block;
+	padding: 4px 8px;
+	background: $lightblue;
+	clip-path: polygon(0% 0%, 0% 0%, 0% 100%, 0% 100%);
+	animation: slideRight 1.3s 0.8s cubic-bezier(0.76, 0.01, 0.21, 1.02) forwards;
+}
 
-	}
-    20% {
-    	transform: translateY(0);
-    	opacity: 0;
-    }
-    60% {
-		opacity: 0.8;
-    }
-    to {
-    	transform: translateY(20px);
-    	opacity: 0;
-    }
+.about-line {
+	margin-bottom: 24px;
+	line-height: 1.8;
+	font-weight: 700;
+	opacity: 0;
+	animation: fade 1s 1.9s forwards;
+}
+
+.arrow-down {
+	opacity: 0;
+	animation: fade 1s 2.5s forwards;
 }
 
 canvas {
