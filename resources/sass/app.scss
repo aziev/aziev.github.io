@@ -1,4 +1,4 @@
-@import '_normalize';
+@import 'normalize';
 
 /***************
 *	Colors
@@ -71,7 +71,7 @@ a{
 
 .header{
 	height: 100%;
-	background: url('../img/bg.jpg') center center;
+	background: url('../../img/bg.jpg') center center;
 	background-attachment: fixed;
 	background-size: cover;
 	position: relative;
@@ -127,7 +127,7 @@ a{
 		background: transparent;
 		border: none;
 		font-size: 32px;
-		background: url('../img/thin-arrowheads-pointing-down.svg') center center no-repeat;
+		background: url('../../img/thin-arrowheads-pointing-down.svg') center center no-repeat;
 		background-size: contain;
 		animation: bounce;
 		animation-duration: 2s;
