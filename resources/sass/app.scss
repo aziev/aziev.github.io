@@ -1,19 +1,5 @@
-@import 'normalize';
-
-/***************
-*	Colors
-***************/
-
-$black: #181a1b;
-$dark: #202325;
-$darkgray: #444a4e;
-$white: #ffffff;
-
-$lightblue: #09b5df;
-
-/***************
-*	Styles
-***************/
+@import "normalize";
+@import "variables";
 
 html, body{
 	height: 100%;
