@@ -13,7 +13,7 @@ h1{
 	font-size: 3.5rem;
 }
 
-h6{
+.section-title {
 	padding-top: 30px;
 	font-size: 1.2rem;
 	&:after{
@@ -21,8 +21,15 @@ h6{
 		content: '';
 		height: 1px;
 		width: 40px;
-		background: $lightblue;
+		background-color: $lightblue;
 		margin-top: 30px;
+	}
+
+	&--line-black {
+		&:after {
+			background-color: $black;
+			height: 1.5px;
+		}
 	}
 }
 
@@ -175,8 +182,12 @@ canvas {
 }
 
 .contact{
-	background: $black;
+	background: $lightblue;
 	padding: 100px 0;
+
+	a {
+		color: $dark;
+	}
 }
 
 .headline-area{
