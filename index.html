@@ -4,7 +4,7 @@
     <meta charset="UTF-8"/>
     <link rel="icon" href="favicon.ico">
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <title>Mikail Aziev | Portfolio</title>
+    <title>Mikail Aziev — Creative Web Developer</title>
     <meta property="og:title" content="Mikail Aziev | Portfolio">
     <meta property="og:image" content="//aziev.github.io/img/preview.jpg">
     <meta property="og:description" content="Portfolio of Mikail Aziev: Info, Projects, Contacts">
@@ -21,19 +21,17 @@
 
       gtag('config', 'UA-124195909-1')
     </script>
-  <script type="module" crossorigin src="/assets/index-4ace2b4d.js"></script>
-  <link rel="stylesheet" href="/assets/index-5c72f74d.css">
+  <script type="module" crossorigin src="/assets/index-65b93a7e.js"></script>
+  <link rel="stylesheet" href="/assets/index-1588a119.css">
 </head>
 <body>
 <div class="header">
+    <canvas id="webgl"></canvas>
     <div class="wrapper">
         <div class="header-text">
             <h1>mikail <span id="label">aziev</span></h1>
             <hr>
-            <h3 class="about-line">
-                I am a cool <strong class="selection">Frontend</strong> &<br>
-                <strong class="selection">Backend Developer</strong>
-            </h3>
+            <h3 class="about-line">Creative Web Developer</h3>
             <img class="arrow-down" src="img/arrow-down.svg" height="21" width="21" alt="">
         </div>
     </div>
@@ -53,15 +51,19 @@
                 <h3>
                     <a href="http://solvo.team/" target="_blank" class="company-link">Solvo</a>, Magas
                 </h3>
-                <p>Senior Web Developer.</p>
+                <p>2013-2017, Web Developer.</p>
                 <h3>
                     <a href="http://www.hicaliber.com.au" target="_blank" class="company-link">Hicaliber</a>, Gold Coast
                 </h3>
-                <p>Fullstack Web Developer.</p>
+                <p>2017-2018, Fullstack Web Developer.</p>
                 <h3>
                     <a href="https://www.visualsparks.com/" target="_blank" class="company-link">VST</a>, Dubai
                 </h3>
-                <p>Software Engineer.</p>
+                <p>2018, Software Engineer.</p>
+                <h3>
+                    <a href="https://tharonline.nl/" target="_blank" class="company-link">THAR</a>, Netherlands
+                </h3>
+                <p>2019-2023, Lead Developer.</p>
             </div>
             <div class="part">
                 <h1>Languages</h1>
@@ -74,7 +76,7 @@
 <div class="skills">
     <div class="wrapper">
         <div class="headline-area">
-            <h6>Skills</h6>
+            <h6 class="section-title">Skills</h6>
         </div>
         <div class="contact-area">
             <div class="skills-group">
@@ -82,9 +84,9 @@
                 <ul>
                     <li>HTML</li>
                     <li>CSS (SCSS)</li>
-                    <li>JavaScript (ES6)</li>
-                    <li>Vue.js</li>
-                    <li>Angular</li>
+                    <li>JavaScript</li>
+                    <li>Vue</li>
+                    <li>WebGL</li>
                 </ul>
             </div>
             <div class="skills-group">
@@ -93,7 +95,7 @@
                     <li>PHP</li>
                     <li>Laravel</li>
                     <li>MySQL</li>
-                    <li>SQLite</li>
+                    <li>Redis</li>
                     <li>ElasticSearch</li>
                 </ul>
             </div>
@@ -103,57 +105,58 @@
                     <li>Git</li>
                     <li>Docker</li>
                     <li>Composer</li>
-                    <li>Gulp</li>
-                    <li>Webpack</li>
+                    <li>Vite</li>
                 </ul>
             </div>
         </div>
     </div>
 </div>
-<div class="portfolio">
-    <div class="item">
-        <img src="img/hoam.jpg" alt="">
-        <div class="desc">
-            <h3>Hoam</h3>
-            <p>
-                Backend of advertising site. Based on Laravel PHP Framework.<br>
-                <a href="http://hoam.ru/" target="_blank">Visit &rarr;</a>
-            </p>
-        </div>
-    </div>
-    <div class="item">
-        <img src="img/jumponandstay.jpg" alt="">
-        <div class="desc">
-            <h3>JumpOnAndStay</h3>
-            <p>
-                Australian realty website.<br>
-                <a href="http://jumponandstay.com/" target="_blank">Visit &rarr;</a>
-            </p>
-        </div>
-    </div>
-    <div class="item">
-        <img src="img/codepaper.jpg" alt="">
-        <div class="desc">
-            <h3>Codepaper</h3>
-            <p>
-                Website with articles about coding. Based on Laravel.<br>
-                <a href="http://codepaper.ru/" target="_blank">Visit &rarr;</a></p>
-        </div>
-    </div>
-</div>
-<div class="contact">
+<!--<div class="portfolio">-->
+<!--    <div class="item">-->
+<!--        <img src="img/hoam.jpg" alt="">-->
+<!--        <div class="desc">-->
+<!--            <h3>Hoam</h3>-->
+<!--            <p>-->
+<!--                Backend of advertising site. Based on Laravel PHP Framework.<br>-->
+<!--                <a href="http://hoam.ru/" target="_blank">Visit &rarr;</a>-->
+<!--            </p>-->
+<!--        </div>-->
+<!--    </div>-->
+<!--    <div class="item">-->
+<!--        <img src="img/jumponandstay.jpg" alt="">-->
+<!--        <div class="desc">-->
+<!--            <h3>JumpOnAndStay</h3>-->
+<!--            <p>-->
+<!--                Australian realty website.<br>-->
+<!--                <a href="http://jumponandstay.com/" target="_blank">Visit &rarr;</a>-->
+<!--            </p>-->
+<!--        </div>-->
+<!--    </div>-->
+<!--    <div class="item">-->
+<!--        <img src="img/codepaper.jpg" alt="">-->
+<!--        <div class="desc">-->
+<!--            <h3>Codepaper</h3>-->
+<!--            <p>-->
+<!--                Website with articles about coding. Based on Laravel.<br>-->
+<!--                <a href="http://codepaper.ru/" target="_blank">Visit &rarr;</a></p>-->
+<!--        </div>-->
+<!--    </div>-->
+<!--</div>-->
+<section class="contact">
     <div class="wrapper">
         <div class="headline-area">
-            <h6>Contact</h6>
+            <h6 class="section-title section-title--line-black">Contact</h6>
         </div>
         <div class="contact-area">
             <h1>
-                You can contact me via email
-                <a href="mailto:mikail.aziev@gmail.com">mikail.aziev@gmail.com</a>
+                Send me message at
+                <a href="mailto:mikail.aziev@gmail.com?subject=Job%20request&body=Hi%2C%20Mikail!%0D%0A%0D%0AMy%20name%20is%20___.%20I%20work%20at%20___.%0D%0A%0D%0AWe%20would%20like%20to%20request%20your%20services%20for%20our%20project%20___.%0D%0A%0D%0ABest%20regards%2C%20___.">
+                    mikail.aziev@gmail.com
+                </a>
             </h1>
         </div>
     </div>
-</div>
+</section>
 <!--<div id="app"></div>-->
 
 </body>
